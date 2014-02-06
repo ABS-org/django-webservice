@@ -86,7 +86,7 @@ STATIC_ROOT = 'static'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 # REST Framework
