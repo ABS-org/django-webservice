@@ -21,3 +21,7 @@ urlpatterns = patterns('',
 
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 )
+
+urlpatterns += patterns('django.contrib.staticfiles.views',
+    url(r'^static/(?P<path>.*)$', 'serve'),
+)
