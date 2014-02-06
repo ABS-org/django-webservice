@@ -82,7 +82,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
 
+# Additional locations of static files
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_DIR, 'static'),
+)
 
 # REST Framework
 # http://www.django-rest-framework.org/#example
