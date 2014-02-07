@@ -111,5 +111,5 @@ REST_FRAMEWORK = {
 # Load local_settings
 try:
     from local_settings import *
-except ImportError:
-    print u'File settings_local.py is not found.'
+except:
+    SECRET_KEY = 'OH NO!, psss... Im not using this. Just for passing on Travis CI ;)'
