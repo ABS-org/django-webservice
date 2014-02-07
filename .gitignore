@@ -21,6 +21,7 @@ include/
 # Project
 ############################
 static/
+local_settings.py
 
 ############################
 # OSX
