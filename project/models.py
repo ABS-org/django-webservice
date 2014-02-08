@@ -16,16 +16,16 @@ class UserViewSet(viewsets.ModelViewSet):
 class GroupViewSet(viewsets.ModelViewSet):
     model = Group
 
-class MyCustomProfile(FacebookModel):
-		user = models.OneToOneField(settings.AUTH_USER_MODEL)
-		@receiver(post_save)
-		def create_profile(sender, instance, created, **kwargs):
+# class MyCustomProfile(FacebookModel):
+# 		user = models.OneToOneField(settings.AUTH_USER_MODEL)
+# 		@receiver(post_save)
+# 		def create_profile(sender, instance, created, **kwargs):
 
-				if sender == get_user_model():
+# 				if sender == get_user_model():
 
-						user = instance
-						profile_model = get_profile_model()
+# 						user = instance
+# 						profile_model = get_profile_model()
 
-				if profile_model == MyCustomProfile and created:
+# 				if profile_model == MyCustomProfile and created:
 
-						profile, new = MyCustomProfile.objects.get_or_create(user=instance)
+# 						profile, new = MyCustomProfile.objects.get_or_create(user=instance)
