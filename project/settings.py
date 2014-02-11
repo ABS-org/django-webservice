@@ -35,6 +35,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'project.apps.uploader',
     'rest_framework',
     'django_facebook',
     'storages',
