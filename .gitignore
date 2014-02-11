@@ -21,6 +21,7 @@ include/
 # Project
 ############################
 static/
+media/**/*
 local_settings.py
 
 ############################
