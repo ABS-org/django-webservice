@@ -78,6 +78,12 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Media files (Dynamic Images, Documents etc)
+# https://docs.djangoproject.com/en/1.6/ref/settings/#std:setting-MEDIA_ROOT
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
